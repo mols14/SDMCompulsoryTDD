@@ -39,7 +39,7 @@ namespace SDMCompulsoryTDD
             throw new System.NotImplementedException();
         }
 
-        public double GetNumberOfRates(int movie, int rate)
+        public int GetNumberOfRates(int movie, int rate)
         {
             throw new System.NotImplementedException();
         }

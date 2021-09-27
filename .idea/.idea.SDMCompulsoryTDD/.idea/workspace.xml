@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ff4dff1-6bd7-45ab-97eb-12134961a3a7" name="Changes" comment="" />
+    <list default="true" id="2ff4dff1-6bd7-45ab-97eb-12134961a3a7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/Kernel/IService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/Kernel/IService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/Debug/net5.0/SDMCompulsoryTDD.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/Debug/net5.0/SDMCompulsoryTDD.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/Debug/net5.0/SDMCompulsoryTDD.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/Debug/net5.0/SDMCompulsoryTDD.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/Debug/net5.0/SDMCompulsoryTDD.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/Debug/net5.0/SDMCompulsoryTDD.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/SDMCompulsoryTDD.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/SDMCompulsoryTDD.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/SDMCompulsoryTDD.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/SDMCompulsoryTDD.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/Debug/net5.0/SDMCompulsoryTDDTest.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/Debug/net5.0/SDMCompulsoryTDDTest.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/Debug/net5.0/SDMCompulsoryTDDTest.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/Debug/net5.0/SDMCompulsoryTDDTest.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/SDMCompulsoryTDDTest.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/SDMCompulsoryTDDTest.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/SDMCompulsoryTDDTest.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/SDMCompulsoryTDDTest.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yiITQsMhDKbaOuRiVXQi1IxgMp" />
   <component name="ProjectViewState">
@@ -23,6 +45,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -34,13 +57,15 @@
       <option name="presentableId" value="Default" />
       <updated>1632727993639</updated>
       <workItem from="1632728003029" duration="2993000" />
+      <workItem from="1632740124489" duration="105000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
