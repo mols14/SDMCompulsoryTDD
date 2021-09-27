@@ -15,10 +15,18 @@ namespace SDMCompulsoryTDD.DataAccess
             {
                 Reviewer = 1,
                 Movie = 1,
-                Grade = 5,
+                Grade = 4,
+                ReviewDate = DateTime.Today
+            };
+            var review2 = new BEReview()
+            {
+                Reviewer = 1,
+                Movie = 2,
+                Grade = 1,
                 ReviewDate = DateTime.Today
             };
             Reviews.Add(review1);
+            Reviews.Add(review2);
         }
     }
 }

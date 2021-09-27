@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using SDMCompulsoryTDD.Kernel;
 
 namespace SDMCompulsoryTDD
@@ -21,7 +22,9 @@ namespace SDMCompulsoryTDD
 
         public double GetAverageRateFromReviewer(int reviewer)
         {
-            throw new System.NotImplementedException();
+            var reviews = _dataAccess.GetReviewByReviewerNo(reviewer);
+            var averageOfReviews = reviews.Average();
+            return averageOfReviews;
         }
 
         public int GetNumberOfRatesByReviewer(int reviewer, int rate)

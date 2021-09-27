@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using SDMCompulsoryTDD.BE;
 using SDMCompulsoryTDD.Kernel;
@@ -6,12 +7,12 @@ namespace SDMCompulsoryTDD.DataAccess
 {
     public class ReviewRepository : IReviewRepository
     {
-        public MockData _mockData;
+        private MockData _mockData;
         
-        public ReviewRepository(MockData mockData)
+        public ReviewRepository()
         {
-            _mockData = mockData;
-            mockData.InitData();
+            _mockData = new MockData();
+            _mockData.InitData();
         }
 
         public IEnumerable<BEReview> GetAll()
@@ -19,7 +20,7 @@ namespace SDMCompulsoryTDD.DataAccess
             throw new System.NotImplementedException();
         }
 
-        public BEReview GetByReviewerNo(int reviewerNo)
+        public IEnumerable<int> GetReviewByReviewerNo(int reviewerNo)
         {
             throw new System.NotImplementedException();
         }

@@ -7,7 +7,7 @@ namespace SDMCompulsoryTDD.Kernel
     {
         IEnumerable<BEReview> GetAll();
 
-        BEReview GetByReviewerNo(int reviewerNo);
+        IEnumerable<int> GetReviewByReviewerNo(int reviewerNo);
 
         void Insert(BEReview r);
 
