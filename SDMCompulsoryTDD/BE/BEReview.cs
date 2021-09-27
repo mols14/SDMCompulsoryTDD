@@ -4,10 +4,11 @@ namespace SDMCompulsoryTDD.BE
 {
     public class BEReview
     {
-        private int Reviewer;
-        private int Movie;
-        private int Grade;
-        private DateTime ReviewDate;
+        public int Reviewer { get; set; }
+        public int Movie { get; set; }
+        public int Grade { get; set; }
+        public DateTime ReviewDate { get; set; }
+
         
     }
 }

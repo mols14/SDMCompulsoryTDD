@@ -1,19 +1,7 @@
-using System.Collections.Generic;
-using SDMCompulsoryTDD.Kernel;
-
-namespace SDMCompulsoryTDD
+namespace SDMCompulsoryTDD.Kernel
 {
-    public class Service
+    public interface IService
     {
-        private IReviewRepository _dataAccess;
-
-        public Service(IReviewRepository dataAccess)
-        {
-            _dataAccess = dataAccess;
-        }
-
-
-        //On input N, what are the number of reviews from reviewer N?
         public int GetNumberOfReviewsFromReviewer(int reviewer)
         {
             throw new System.NotImplementedException();
@@ -54,20 +42,10 @@ namespace SDMCompulsoryTDD
             throw new System.NotImplementedException();
         }
 
-        public List<int> GetTopRatedMovies(int amount)
-        {
-            throw new System.NotImplementedException();
-        }
+        public List<int> GetTopRatedMovies(int amount){}
 
-        public List<int> GetTopMoviesByReviewer(int reviewer)
-        {
-            throw new System.NotImplementedException();
-        }
+        public List<int> GetTopMoviesByReviewer(int reviewer){}
 
-        public List<int> GetReviewersByMovie(int movie)
-        {
-            throw new System.NotImplementedException();
-        }
-
+        public List<int> GetReviewersByMovie(int movie) {}
     }
 }

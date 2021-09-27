@@ -3,7 +3,7 @@ using SDMCompulsoryTDD.BE;
 
 namespace SDMCompulsoryTDD.Kernel
 {
-    public interface IDataAccess
+    public interface IReviewRepository
     {
         IEnumerable<BEReview> GetAll();
 

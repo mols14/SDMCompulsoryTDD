@@ -4,8 +4,16 @@ using SDMCompulsoryTDD.Kernel;
 
 namespace SDMCompulsoryTDD.DataAccess
 {
-    public class DataAccess : IDataAccess
+    public class ReviewRepository : IReviewRepository
     {
+        public MockData _mockData;
+        
+        public ReviewRepository(MockData mockData)
+        {
+            _mockData = mockData;
+            mockData.InitData();
+        }
+
         public IEnumerable<BEReview> GetAll()
         {
             throw new System.NotImplementedException();
