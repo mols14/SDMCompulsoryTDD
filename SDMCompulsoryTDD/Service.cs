@@ -17,7 +17,13 @@ namespace SDMCompulsoryTDD
         //On input N, what are the number of reviews from reviewer N?
         public int GetNumberOfReviewsFromReviewer(int reviewer)
         {
-            throw new System.NotImplementedException();
+            var reviews = _dataAccess.GetAll();
+            var rates = reviews
+                .Where(r => r.Reviewer == reviewer)
+                .Select(r => r.Grade).ToList();
+
+            var numberOfRates = rates.Count;
+            return numberOfRates;
         }
 
         public double GetAverageRateFromReviewer(int reviewer)

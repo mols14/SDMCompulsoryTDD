@@ -11,7 +11,21 @@ namespace SDMCompulsoryTDDTest
     public class ProductionCodeTest
     {
         [Theory]
-        [InlineData(1, 2.5)]
+        [InlineData(1, 3)]
+        public void TestNumberOfReviewsFromN(int reviewer, int expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new ReviewRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetNumberOfReviewsFromReviewer(reviewer);
+            
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
+        [Theory]
+        [InlineData(1, 2)]
         public void TestAverageRateGivenByN(int reviewer, double expectedRes)
         {
             //Arrange
@@ -24,5 +38,7 @@ namespace SDMCompulsoryTDDTest
             //Assert
             Assert.Equal(expectedRes, actual);
         }
+
+        
     }
 }
