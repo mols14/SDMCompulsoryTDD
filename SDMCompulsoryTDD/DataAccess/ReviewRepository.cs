@@ -8,16 +8,17 @@ namespace SDMCompulsoryTDD.DataAccess
     public class ReviewRepository : IReviewRepository
     {
         private MockData _mockData;
-        
+        private static List<BEReview> _reviews;
+
         public ReviewRepository()
         {
             _mockData = new MockData();
-            _mockData.InitData();
+            _reviews = _mockData.InitData();
         }
 
         public IEnumerable<BEReview> GetAll()
         {
-            throw new System.NotImplementedException();
+            return _reviews;
         }
 
         public IEnumerable<int> GetReviewByReviewerNo(int reviewerNo)

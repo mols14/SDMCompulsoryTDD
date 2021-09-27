@@ -22,9 +22,13 @@ namespace SDMCompulsoryTDD
 
         public double GetAverageRateFromReviewer(int reviewer)
         {
-            var reviews = _dataAccess.GetReviewByReviewerNo(reviewer);
-            var averageOfReviews = reviews.Average();
-            return averageOfReviews;
+            var reviews = _dataAccess.GetAll();
+            var rates = reviews
+                .Where(r => r.Reviewer == reviewer)
+                .Select(r => r.Grade).ToList();
+
+            var averageOfRates = rates.Average();
+            return averageOfRates;
         }
 
         public int GetNumberOfRatesByReviewer(int reviewer, int rate)
