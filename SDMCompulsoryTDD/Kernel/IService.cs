@@ -1,51 +1,29 @@
+using System.Collections.Generic;
+
 namespace SDMCompulsoryTDD.Kernel
 {
     public interface IService
     {
-        public int GetNumberOfReviewsFromReviewer(int reviewer)
-        {
-            throw new System.NotImplementedException();
-        }
+        public int GetNumberOfReviewsFromReviewer(int reviewer);
 
-        public double GetAverageRateFromReviewer(int reviewer)
-        {
-            throw new System.NotImplementedException();
-        }
+        public double GetAverageRateFromReviewer(int reviewer);
 
-        public int GetNumberOfRatesByReviewer(int reviewer, int rate)
-        {
-            throw new System.NotImplementedException();
-        }
+        public int GetNumberOfRatesByReviewer(int reviewer, int rate);
 
-        public int GetNumberOfReviews(int movie)
-        {
-            throw new System.NotImplementedException();
-        }
+        public int GetNumberOfReviews(int movie);
 
-        public double GetAverageRateOfMovie(int movie)
-        {
-            throw new System.NotImplementedException();
-        }
+        public double GetAverageRateOfMovie(int movie);
+        
+        public double GetNumberOfRates(int movie, int rate);
 
-        public double GetNumberOfRates(int movie, int rate)
-        {
-            throw new System.NotImplementedException();
-        }
+        public List<int> GetMoviesWithHighestNumberOfTopRates();
+        
+        public List<int> GetMostProductiveReviewers();
+        
+        public List<int> GetTopRatedMovies(int amount);
 
-        public List<int> GetMoviesWithHighestNumberOfTopRates()
-        {
-            throw new System.NotImplementedException();
-        }
+        public List<int> GetTopMoviesByReviewer(int reviewer);
 
-        public List<int> GetMostProductiveReviewers()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public List<int> GetTopRatedMovies(int amount){}
-
-        public List<int> GetTopMoviesByReviewer(int reviewer){}
-
-        public List<int> GetReviewersByMovie(int movie) {}
+        public List<int> GetReviewersByMovie(int movie);
     }
 }

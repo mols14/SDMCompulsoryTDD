@@ -3,7 +3,7 @@ using SDMCompulsoryTDD.Kernel;
 
 namespace SDMCompulsoryTDD
 {
-    public class Service
+    public class Service : IService
     {
         private IReviewRepository _dataAccess;
 
