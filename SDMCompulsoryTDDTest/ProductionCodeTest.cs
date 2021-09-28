@@ -39,6 +39,22 @@ namespace SDMCompulsoryTDDTest
             Assert.Equal(expectedRes, actual);
         }
 
+        [Theory]
+        [InlineData(1, 2, 0)]
+        [InlineData(2, 3, 1)]
+        public void TestHowManyTimesReviewerNHaveGivenRateR(int n, int r, int expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new ReviewRepository();
+            IService service = new Service(repo);
+
+            //Act
+            int actualRed = service.GetNumberOfRatesByReviewer(n, r);
+            
+            //Assert
+            Assert.Equal(expectedRes, actualRed);
+        }
+
 
         [Theory]
         [InlineData(1, 2)]

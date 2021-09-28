@@ -39,7 +39,11 @@ namespace SDMCompulsoryTDD
 
         public int GetNumberOfRatesByReviewer(int reviewer, int rate)
         {
-            throw new System.NotImplementedException();
+            var reviewsByReviewer = _dataAccess.GetAll()
+                .Where(r => r.Reviewer == reviewer)
+                .Where(r => r.Grade == rate).ToList();
+            var numberOfRatesByReviewer = reviewsByReviewer.Count;
+            return numberOfRatesByReviewer;
         }
 
         public int GetNumberOfReviews(int movie)
