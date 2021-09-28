@@ -39,6 +39,35 @@ namespace SDMCompulsoryTDDTest
             Assert.Equal(expectedRes, actual);
         }
 
-        
+
+        [Theory]
+        [InlineData(1, 2)]
+        public void TestGetNumberOfReviews(int movie, int expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new ReviewRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetNumberOfReviews(movie);
+            
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
+
+        [Theory]
+        [InlineData(2, 2.5)]
+        public void TestAverageRateOfMovie(int movie, double expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new ReviewRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetAverageRateOfMovie(movie);
+            
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
     }
 }

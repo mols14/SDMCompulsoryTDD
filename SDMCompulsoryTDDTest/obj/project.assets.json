@@ -6433,19 +6433,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
+    "C:\\Users\\mathi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDDTest\\SDMCompulsoryTDDTest.csproj",
+      "projectUniqueName": "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDDTest\\SDMCompulsoryTDDTest.csproj",
       "projectName": "SDMCompulsoryTDDTest",
-      "projectPath": "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDDTest\\SDMCompulsoryTDDTest.csproj",
-      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDDTest\\obj\\",
+      "projectPath": "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDDTest\\SDMCompulsoryTDDTest.csproj",
+      "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
+      "outputPath": "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDDTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -6457,8 +6457,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj": {
-              "projectPath": "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj"
+            "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj": {
+              "projectPath": "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj"
             }
           }
         }
@@ -6505,7 +6505,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Bruger\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\mathi\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

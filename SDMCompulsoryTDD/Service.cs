@@ -44,12 +44,25 @@ namespace SDMCompulsoryTDD
 
         public int GetNumberOfReviews(int movie)
         {
-            throw new System.NotImplementedException();
+            var allReviews = _dataAccess.GetAll();
+            var movieReviews = allReviews
+                .Where(r => r.Movie == movie)
+                .Select(r => r.Movie).ToList();
+            
+            var numberOfReviews = movieReviews.Count;
+            return numberOfReviews;
         }
 
         public double GetAverageRateOfMovie(int movie)
         {
-            throw new System.NotImplementedException();
+            var allReviews = _dataAccess.GetAll();
+            var movieGrades = allReviews
+                .Where(r => r.Movie == movie)
+                .Select(r => r.Grade).ToList();
+
+           var averageOfMovie = movieGrades.Average();
+
+           return averageOfMovie;
         }
 
         public int GetNumberOfRates(int movie, int rate)

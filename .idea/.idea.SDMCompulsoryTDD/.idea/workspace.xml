@@ -43,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,6 +63,7 @@
       <workItem from="1632728003029" duration="2993000" />
       <workItem from="1632740124489" duration="105000" />
       <workItem from="1632749569938" duration="1944000" />
+      <workItem from="1632818535844" duration="1471000" />
     </task>
     <servers />
   </component>
