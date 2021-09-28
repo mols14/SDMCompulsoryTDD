@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using SDMCompulsoryTDD.BE;
 using SDMCompulsoryTDD.Kernel;
 
 namespace SDMCompulsoryTDD
@@ -59,14 +61,23 @@ namespace SDMCompulsoryTDD
 
         public double GetAverageRateOfMovie(int movie)
         {
-            var allReviews = _dataAccess.GetAll();
-            var movieGrades = allReviews
-                .Where(r => r.Movie == movie)
-                .Select(r => r.Grade).ToList();
+            var ratesOfInterest = _dataAccess.GetRatesByMovieId(movie);
+            
+            var value = RateCalculator(ratesOfInterest);
+            return value;
+            /* var allReviews = _dataAccess.GetAll();
+             var movieGrades = allReviews
+                 .Where(r => r.Movie == movie)
+                 .Select(r => r.Grade).ToList();
+ 
+            var averageOfMovie = movieGrades.Average();
+ 
+            return averageOfMovie;*/
+        }
 
-           var averageOfMovie = movieGrades.Average();
-
-           return averageOfMovie;
+        private double RateCalculator(IEnumerable<double> ratesOfInterest)
+        {
+            throw new NotImplementedException();
         }
 
         public int GetNumberOfRates(int movie, int rate)
@@ -99,5 +110,12 @@ namespace SDMCompulsoryTDD
             throw new System.NotImplementedException();
         }
 
+        public void CreateMovie(BEReview beReview)
+        {
+            if (beReview.Grade < 1 || beReview.Grade > 5)
+            {
+                throw new ArgumentException();
+            }
+        }
     }
 }

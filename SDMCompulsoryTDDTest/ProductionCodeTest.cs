@@ -71,9 +71,10 @@ namespace SDMCompulsoryTDDTest
             Assert.Equal(expectedRes, actual);
         }
 
-        [Theory]
+        /*[Theory]
         [InlineData(2, 2.5)]
-        public void TestAverageRateOfMovie(int movie, double expectedRes)
+        [InlineData(4, 3)]
+        public void TestAverageRateOfMovie()
         {
             //Arrange
             IReviewRepository repo = new ReviewRepository();
@@ -84,6 +85,38 @@ namespace SDMCompulsoryTDDTest
             
             //Assert
             Assert.Equal(expectedRes, actual);
+        }*/
+        
+        [Fact]
+        public void TestNameNotEmpty()
+        {
+            var mockRepo = new Mock<IReviewRepository>();
+
+            var service = new Service(mockRepo.Object);
+
+            service.GetAverageRateOfMovie(1);
+            mockRepo.Verify(m => m.GetRatesByMovieId(1), Times.Once);
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-1)]
+        [InlineData(6)]
+        public void CreateMovie_withStringNotCorrectLenght_ThrowsArgumentException(int grade)
+        {
+            IReviewRepository repo = new ReviewRepository();
+            IService service = new Service(repo);
+            
+            Assert.Throws<ArgumentException>(() =>
+            {
+                service.CreateMovie(new BEReview()
+                {
+                    Grade = grade,
+                    Movie = 1,
+                    ReviewDate = DateTime.Today,
+                    Reviewer = 2
+                });
+            });
         }
     }
 }

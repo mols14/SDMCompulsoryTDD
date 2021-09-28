@@ -26,6 +26,11 @@ namespace SDMCompulsoryTDD.DataAccess
             throw new System.NotImplementedException();
         }
 
+        public IEnumerable<double> GetRatesByMovieId(int movieId)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Insert(BEReview r)
         {
             throw new System.NotImplementedException();

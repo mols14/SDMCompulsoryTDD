@@ -9,6 +9,9 @@ namespace SDMCompulsoryTDD.Kernel
 
         IEnumerable<int> GetReviewByReviewerNo(int reviewerNo);
 
+        IEnumerable<double> GetRatesByMovieId(int movieId);
+
+        
         void Insert(BEReview r);
 
         void Update(BEReview r);
