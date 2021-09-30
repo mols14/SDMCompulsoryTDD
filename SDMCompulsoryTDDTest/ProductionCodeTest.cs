@@ -12,11 +12,11 @@ namespace SDMCompulsoryTDDTest
     public class ProductionCodeTest
     {
         [Theory]
-        [InlineData(1, 3)]
+        [InlineData(1, 2)]
         public void TestNumberOfReviewsFromN(int reviewer, int expectedRes)
         {
             //Arrange
-            IReviewRepository repo = new ReviewRepository();
+            IReviewRepository repo = new DataRepository();
             IService service = new Service(repo);
             
             //Act
@@ -26,11 +26,11 @@ namespace SDMCompulsoryTDDTest
             Assert.Equal(expectedRes, actual);
         }
         [Theory]
-        [InlineData(1, 2)]
+        [InlineData(1, 2.5)]
         public void TestAverageRateGivenByN(int reviewer, double expectedRes)
         {
             //Arrange
-            IReviewRepository repo = new ReviewRepository();
+            IReviewRepository repo = new DataRepository();
             IService service = new Service(repo);
 
             //Act
@@ -46,7 +46,7 @@ namespace SDMCompulsoryTDDTest
         public void TestHowManyTimesReviewerNHaveGivenRateR(int n, int r, int expectedRes)
         {
             //Arrange
-            IReviewRepository repo = new ReviewRepository();
+            IReviewRepository repo = new DataRepository();
             IService service = new Service(repo);
 
             //Act
@@ -62,7 +62,7 @@ namespace SDMCompulsoryTDDTest
         public void TestGetNumberOfReviews(int movie, int expectedRes)
         {
             //Arrange
-            IReviewRepository repo = new ReviewRepository();
+            IReviewRepository repo = new DataRepository();
             IService service = new Service(repo);
             
             //Act
@@ -78,7 +78,7 @@ namespace SDMCompulsoryTDDTest
         public void TestAverageRateOfMovie(int movie, double expectedRes)
         {
             //Arrange
-            IReviewRepository repo = new ReviewRepository();
+            IReviewRepository repo = new DataRepository();
             IService service = new Service(repo);
             
             //Act
@@ -94,7 +94,7 @@ namespace SDMCompulsoryTDDTest
         public void TestSpecificRateOnMovie(int movie, int rate, int expectedRes)
         {
             //Arrange
-            IReviewRepository repo = new ReviewRepository();
+            IReviewRepository repo = new DataRepository();
             IService service = new Service(repo);
             
             //Act
@@ -105,15 +105,43 @@ namespace SDMCompulsoryTDDTest
         }
 
         [Theory]
-        [InlineData(new int[]{2,2,2,2,1,1,1})]
+        [InlineData(new int[]{3,3,2,2,2,1,1})]
         public void TestMostProductiveReviewers(int[] expectedRes)
         {
             //Arrange
-            IReviewRepository repo = new ReviewRepository();
+            IReviewRepository repo = new DataRepository();
             IService service = new Service(repo);
             
             //Act
             var actual = service.GetMostProductiveReviewers();
+            
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
+
+        // public void TestGetTopRatedMovies(int amount, int expectedRes)
+        // {
+        //     //Arrange
+        //     IReviewRepository repo = new DataRepository();
+        //     IService service = new Service(repo);
+        //     
+        //     //Act
+        //     var actual = service.GetTopRatedMovies(amount);
+        //     
+        //     //Assert
+        //     Assert.Equal(expectedRes, actual);
+        // }
+        [Theory]
+        [InlineData(1 ,new int[]{1,2})]
+        [InlineData(2, new int[]{3, 1, 2, 3})]
+        public void TestGetReviewersByMovie(int movie, int[] expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new DataRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetReviewersByMovie(movie);
             
             //Assert
             Assert.Equal(expectedRes, actual);

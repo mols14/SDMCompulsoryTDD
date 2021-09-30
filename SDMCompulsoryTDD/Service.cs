@@ -106,7 +106,12 @@ namespace SDMCompulsoryTDD
 
         public List<int> GetReviewersByMovie(int movie)
         {
-            throw new System.NotImplementedException();
+            var movies = _dataAccess.GetAll()
+                .Where(r => r.Movie == movie)
+                .Select(r => r.Reviewer).ToList();
+
+            return movies;
+
         }
 
         public void CreateMovie(BEReview beReview)

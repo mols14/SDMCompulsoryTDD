@@ -5,12 +5,12 @@ using SDMCompulsoryTDD.Kernel;
 
 namespace SDMCompulsoryTDD.DataAccess
 {
-    public class ReviewRepository : IReviewRepository
+    public class DataRepository : IReviewRepository
     {
         private MockData _mockData;
         private static List<BEReview> _reviews;
 
-        public ReviewRepository()
+        public DataRepository()
         {
             _mockData = new MockData();
             _reviews = _mockData.InitData();

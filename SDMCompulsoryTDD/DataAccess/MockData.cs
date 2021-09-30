@@ -27,7 +27,7 @@ namespace SDMCompulsoryTDD.DataAccess
             };
             var review2 = new BEReview()
             {
-                Reviewer = 1,
+                Reviewer = 3,
                 Movie = 2,
                 Grade = 1,
                 ReviewDate = DateTime.Today
@@ -48,7 +48,7 @@ namespace SDMCompulsoryTDD.DataAccess
             };
             var review6 = new BEReview()
             {
-                Reviewer = 2,
+                Reviewer = 3,
                 Movie = 2,
                 Grade = 5,
                 ReviewDate = DateTime.Today
