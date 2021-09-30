@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using SDMCompulsoryTDD;
 using SDMCompulsoryTDD.BE;
 using SDMCompulsoryTDD.DataAccess;
@@ -40,7 +42,7 @@ namespace SDMCompulsoryTDDTest
 
         [Theory]
         [InlineData(1, 2, 0)]
-        [InlineData(2, 3, 1)]
+        [InlineData(2, 3, 2)]
         public void TestHowManyTimesReviewerNHaveGivenRateR(int n, int r, int expectedRes)
         {
             //Arrange
@@ -72,7 +74,7 @@ namespace SDMCompulsoryTDDTest
 
         [Theory]
         [InlineData(2, 2.5)]
-        [InlineData(4, 3)]
+        [InlineData(1, 3)]
         public void TestAverageRateOfMovie(int movie, double expectedRes)
         {
             //Arrange
@@ -81,6 +83,37 @@ namespace SDMCompulsoryTDDTest
             
             //Act
             var actual = service.GetAverageRateOfMovie(movie);
+            
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
+
+        [Theory]
+        [InlineData(1, 5, 0)]
+        [InlineData(2, 1, 2)]
+        public void TestSpecificRateOnMovie(int movie, int rate, int expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new ReviewRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetNumberOfRates(movie, rate);
+
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
+
+        [Theory]
+        [InlineData(new int[]{2,2,2,2,1,1,1})]
+        public void TestMostProductiveReviewers(int[] expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new ReviewRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetMostProductiveReviewers();
             
             //Assert
             Assert.Equal(expectedRes, actual);

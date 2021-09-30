@@ -61,28 +61,24 @@ namespace SDMCompulsoryTDD
 
         public double GetAverageRateOfMovie(int movie)
         {
-            var ratesOfInterest = _dataAccess.GetRatesByMovieId(movie);
-            
-            var value = RateCalculator(ratesOfInterest);
-            return value;
-            /* var allReviews = _dataAccess.GetAll();
+            var allReviews = _dataAccess.GetAll();
              var movieGrades = allReviews
                  .Where(r => r.Movie == movie)
                  .Select(r => r.Grade).ToList();
  
             var averageOfMovie = movieGrades.Average();
  
-            return averageOfMovie;*/
-        }
-
-        private double RateCalculator(IEnumerable<double> ratesOfInterest)
-        {
-            throw new NotImplementedException();
+            return averageOfMovie;
         }
 
         public int GetNumberOfRates(int movie, int rate)
         {
-            throw new System.NotImplementedException();
+            var allMovies = _dataAccess.GetAll()
+                .Where(r => r.Movie == movie)
+                .Where(r => r.Grade == rate).ToList();
+
+            var numberOfRates = allMovies.Count;
+            return numberOfRates;
         }
 
         public List<int> GetMoviesWithHighestNumberOfTopRates()
@@ -92,7 +88,10 @@ namespace SDMCompulsoryTDD
 
         public List<int> GetMostProductiveReviewers()
         {
-            throw new System.NotImplementedException();
+            var reviews = _dataAccess.GetAll()
+                .OrderByDescending(g => g.Reviewer).Select(r => r.Reviewer).ToList();
+            return reviews;
+
         }
 
         public List<int> GetTopRatedMovies(int amount)

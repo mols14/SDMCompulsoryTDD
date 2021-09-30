@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2ff4dff1-6bd7-45ab-97eb-12134961a3a7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SDMCompulsoryTDD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SDMCompulsoryTDD/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/DataAccess/ReviewRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/DataAccess/ReviewRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/Kernel/IReviewRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/Kernel/IReviewRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/Kernel/IService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/Kernel/IService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/DataAccess/MockData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/DataAccess/MockData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDD/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDD/Service.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDMCompulsoryTDDTest/ProductionCodeTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SDMCompulsoryTDDTest/ProductionCodeTest.cs" afterDir="false" />
     </list>
