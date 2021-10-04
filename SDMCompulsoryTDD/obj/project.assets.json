@@ -4646,19 +4646,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Guwop\\.nuget\\packages\\": {}
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
+      "projectUniqueName": "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
       "projectName": "SDMCompulsoryTDD",
-      "projectPath": "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
-      "packagesPath": "C:\\Users\\Guwop\\.nuget\\packages\\",
-      "outputPath": "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\obj\\",
+      "projectPath": "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Work\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Guwop\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -4702,7 +4702,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Guwop\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Bruger\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

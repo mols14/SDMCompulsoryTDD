@@ -163,5 +163,20 @@ namespace SDMCompulsoryTDDTest
             //Assert
             Assert.Equal(expectedRes, actual);
         }
+        
+        [Theory]
+        [InlineData(new int[]{2})]
+        public void TestMoviesWithHighestNumberOfTopRates(int[] expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new DataRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetMoviesWithHighestNumberOfTopRates(); 
+            
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
     }
 }

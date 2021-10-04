@@ -83,7 +83,11 @@ namespace SDMCompulsoryTDD
 
         public List<int> GetMoviesWithHighestNumberOfTopRates()
         {
-            throw new System.NotImplementedException();
+            var topRate = 5;
+            var allReviews = _dataAccess.GetAll()
+                .Where(r => r.Grade == topRate)
+                .Select(m => m.Movie).ToList();
+            return allReviews;
         }
 
         public List<int> GetMostProductiveReviewers()
