@@ -39,6 +39,5 @@ namespace SDMCompulsoryTDD.Kernel
         //On input N, who are the reviewers that have reviewed movie N?
         //The list should be sorted decreasing by rate first, and date secondly.
         public List<int> GetReviewersByMovie(int movie);
-        void CreateMovie(BEReview beReview);
     }
 }

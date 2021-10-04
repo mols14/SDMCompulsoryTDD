@@ -118,19 +118,6 @@ namespace SDMCompulsoryTDDTest
             //Assert
             Assert.Equal(expectedRes, actual);
         }
-
-        // public void TestGetTopRatedMovies(int amount, int expectedRes)
-        // {
-        //     //Arrange
-        //     IReviewRepository repo = new DataRepository();
-        //     IService service = new Service(repo);
-        //     
-        //     //Act
-        //     var actual = service.GetTopRatedMovies(amount);
-        //     
-        //     //Assert
-        //     Assert.Equal(expectedRes, actual);
-        // }
         
         [Theory]
         [InlineData(1 ,new int[]{1,2})]

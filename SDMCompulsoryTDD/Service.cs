@@ -93,7 +93,8 @@ namespace SDMCompulsoryTDD
         public List<int> GetMostProductiveReviewers()
         {
             var reviews = _dataAccess.GetAll()
-                .OrderByDescending(g => g.Reviewer).Select(r => r.Reviewer).ToList();
+                .OrderByDescending(g => g.Reviewer)
+                .Select(r => r.Reviewer).ToList();
             return reviews;
 
         }
@@ -123,13 +124,6 @@ namespace SDMCompulsoryTDD
             return movies;
 
         }
-
-        public void CreateMovie(BEReview beReview)
-        {
-            if (beReview.Grade < 1 || beReview.Grade > 5)
-            {
-                throw new ArgumentException();
-            }
-        }
+        
     }
 }
