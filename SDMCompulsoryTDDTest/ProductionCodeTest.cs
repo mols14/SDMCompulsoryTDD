@@ -131,6 +131,7 @@ namespace SDMCompulsoryTDDTest
         //     //Assert
         //     Assert.Equal(expectedRes, actual);
         // }
+        
         [Theory]
         [InlineData(1 ,new int[]{1,2})]
         [InlineData(2, new int[]{3, 1, 2, 3})]
@@ -142,6 +143,22 @@ namespace SDMCompulsoryTDDTest
             
             //Act
             var actual = service.GetReviewersByMovie(movie);
+            
+            //Assert
+            Assert.Equal(expectedRes, actual);
+        }
+
+        [Theory]
+        [InlineData(1, new int[]{1, 2})]
+        [InlineData(2, new int[]{2, 5, 1})]
+        public void TestGetTopMoviesByReviewer(int reviewer, int[] expectedRes)
+        {
+            //Arrange
+            IReviewRepository repo = new DataRepository();
+            IService service = new Service(repo);
+            
+            //Act
+            var actual = service.GetTopMoviesByReviewer(reviewer);
             
             //Assert
             Assert.Equal(expectedRes, actual);

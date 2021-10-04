@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj": {}
+    "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj": {}
   },
   "projects": {
-    "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj": {
+    "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
+        "projectUniqueName": "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
         "projectName": "SDMCompulsoryTDD",
-        "projectPath": "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
-        "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-        "outputPath": "C:\\SkoleArbejde\\Rider\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\obj\\",
+        "projectPath": "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\SDMCompulsoryTDD.csproj",
+        "packagesPath": "C:\\Users\\Guwop\\.nuget\\packages\\",
+        "outputPath": "C:\\WorkFiles\\SDMCompulsoryTDD\\SDMCompulsoryTDD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Guwop\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\mathi\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Guwop\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

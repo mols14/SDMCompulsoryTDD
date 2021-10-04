@@ -101,7 +101,13 @@ namespace SDMCompulsoryTDD
 
         public List<int> GetTopMoviesByReviewer(int reviewer)
         {
-            throw new System.NotImplementedException();
+            var movies = _dataAccess.GetAll()
+                .OrderByDescending(g => g.Grade)
+                .ThenByDescending(d => d.ReviewDate)
+                .Where(r => r.Reviewer == reviewer)
+                .Select(m => m.Movie).ToList();
+            
+            return movies;
         }
 
         public List<int> GetReviewersByMovie(int movie)
