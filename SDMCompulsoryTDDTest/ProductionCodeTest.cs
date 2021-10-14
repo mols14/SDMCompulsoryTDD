@@ -36,7 +36,7 @@ namespace SDMCompulsoryTDDTest
             //Act
             var actual = service.GetAverageRateFromReviewer(reviewer);
             
-            //Assert
+            //Asserd
             Assert.Equal(expectedRes, actual);
         }
 
