@@ -24,6 +24,8 @@ namespace SDMCompulsoryTDDTest
             
             //Assert
             Assert.Equal(expectedRes, actual);
+            
+            
         }
         [Theory]
         [InlineData(1, 2.5)]
