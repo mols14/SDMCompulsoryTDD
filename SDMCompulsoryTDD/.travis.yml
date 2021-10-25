@@ -1,3 +1,9 @@
 language: csharp
-rvm:
-  - 5.0
+mono: none
+dotnet: 5.0
+solution: SDMCompulsoryTDD.sln
+
+script: 
+  - dotnet restore
+  - dotnet build
+  - dotnet test
